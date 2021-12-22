@@ -1,0 +1,370 @@
+<html>
+	<title>Cricket</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+	.carousel-inner img {
+		width: 100%;
+		height: 30%;
+	}
+	.fa {
+	  padding: 15px;
+	  font-size: 18px;
+	  width: 50px;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 2px 2px;
+	  border-radius:50%;
+	}
+
+	.fa:hover {
+		opacity: 0.7;
+		
+	}
+
+	.fa-facebook {
+	  background: #3B5998;
+	  color: white;
+	}
+	.fa-twitter {
+	  background: #55ACEE;
+	  color: white;
+	}
+	.fa-instagram {
+	  background: #125688;
+	  color: white;
+	}
+
+	.fa-pinterest {
+	  background: #cb2027;
+	  color: white;
+	}
+	.fa-tumblr {
+	  background: #2c4762;
+	  color: white;
+	}
+	.fa-google {
+	  background: #dd4b39;
+	  color: white;
+	}
+	
+	#search{
+	margin-left: 590px;
+	}
+	#home{
+	heigth:700px;
+	width:900px;
+	}
+	#about{
+	heigth:700px;
+	width:900px;
+	text-align:left;
+	}
+	#img{
+	 background-image: url('images/s.jpg');
+	background-repeat: no-repeat;
+	background-position:right;
+	background-size:400px 600px;
+	}
+	#gallery{
+	text-align:center;
+	padding:50px;
+	}
+	#services{
+	text-align:center;
+	padding:50px;
+	}
+	.sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	}
+
+	.sticky + .content {
+	  padding-top: 60px;
+	}
+	
+	.mg_add{
+	margin-top:5px;
+	}
+	
+	
+	
+  </style>
+  </head>
+   <!-----------------------------------------------------------Javascript-------------------------------------------->
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	// Get the navbar
+	var navbar = document.getElementById("navbar");
+
+	// Get the offset position of the navbar
+	var sticky = navbar.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+	</script>
+	<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+	<!--------------------------------------------------------------CAROUSEL---------------------------->
+	<div id="demo" class="carousel slide" data-ride="carousel">
+	  <ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+	  </ul>
+	<div class="carousel-inner">
+    <div class="carousel-item active" style="opacity: 1;">
+      <img src="images/03.jpg" width="1100" height="500">
+      <div class="carousel-caption">        
+        <h3>CRICKET CIVILISES PEOPLE AND CREATES GOOD GENTLEMEN</h3>
+      </div>   
+    </div>
+    <div class="carousel-item" style="opacity:1;">
+      <img src="images/13.jpg"  width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>CRICKET IS THE MOST WONDERFUL ENTERTAINMENT IN THE WORLD</h3>
+      </div>   
+    </div>
+    <div class="carousel-item" style=" opacity: 1;">
+      <img src="images/14.jpg"  width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>THE GREATEST GAME THAT THE WIT OF MAN HAS YET DEVISED</h3>
+      </div>   
+    </div>
+	</div>
+	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	</a>
+	<a class="carousel-control-next" href="#demo" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	</a>
+	</div>
+	<!----------------------------------------------------------NAVBAR------------------------------------------------------------->
+	<!--<div class="container">-->
+
+	  <ul class="nav nav-pills navbar-fixed bg-dark navbar-dark " id="myScrollspy" >
+    <li class="nav-item">
+      <a class="nav-link " href="#cricket.html">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link "  href="#about">About</a>
+   
+		</li>
+		<li class="nav-item">
+      <a class="nav-link" href="#services">Services</a>
+		</li>
+		<li class="nav-item">
+      <a class="nav-link " href="#gallery">Gallery</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link " href="#contact">Contact</a>
+    </li>
+	<form class="form-inline my-2 my-lg-0" id="search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+	</ul>
+	</div><br>
+	<!--------------------------------------------------background image------------------------------------------------------->
+	<div id="img">
+	<!--------------------------------------------------------HOME------------------------------------------------------------->
+	<div id="home">
+	<div class="container" >
+	<div class="card" style="width=100%;height=50%">
+    <h3 class="card-header">Home</h3></div>
+     <div class="card-body">
+     <h5 class="card-title">Cricket Prediction System</h5>
+     <p class="card-text">The main objective of sports prediction is to improve team performance and enhance the chances of winning the game.Player selection is an essential task for any sport and similarly for the game of cricket as well. The players’ performance varies on various factors. The team management and the captain selects eleven players for each match from the entire squad. Review of different attributes and players’ results is considered to pick the best eleven players. By scoring runs each batsman contributes and each bowler contributes by taking wickets and awarding minimum runs</p>
+     <a href="#" class="btn btn-primary">Read more</a>
+     </div>
+     </div>
+	
+	
+	</div><br>
+	<!---------------------------------------------------------About----------------------------------------------------->
+	<div id="about">
+	<div class="container">
+	 <div class="card" style="width=100%;height=50%">
+      <h3 class="card-header">About us</h3></div>
+	  <div class="card-body" >
+      <p class="card-text"> This project aims to predict team success based on the player's past records. Acquisition of the players 'results individually and their contribution to the team i.e. Best batting performance among the batsmen available, best bowling performance among the available bowlers and best all-rounder performance will be a great help in selecting the eleven players. We used the Random Forest Algorithm and Decision Tree classifiers to produce the problem's prediction models. It was found that the Random Forest classifier is the most reliable for the problems proposed.</p>
+     <a href="#" class="btn btn-primary">Read more</a>
+	</div>
+	</div>
+	</div><br>
+	</div>
+	<!------------------------------------------------------------------------------------------------------------------->
+	<!---------------------------------------------------------Services-------------------------------------------------->
+	<div class="jumbotron jumbotron-fluid" id="services">
+	<div class="container">
+	<h2>Services</h2>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<div class="card-deck"> 
+	<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+	<div class= "card-block">
+		<div class="col-lg-6 mb-4"> 
+			<div class="card" style="width:350px">
+				<img class="card-img-top" src="images/11.jpg" alt="Card image" style="width:100%">
+				<div class="card-body" syle="height:50%">
+				  <h4 class="card-title">Winning team</h4>
+				  <p class="card-text">Different teams determined wheather team winnes or lose.</p>
+				  <a href="team.html" class="btn btn-primary stretched-link">more</a>
+				</div>
+		  </div>
+	  </div>
+	</div>  
+  </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+  <div class= "card-block">
+	  <div class="col-lg-6 mb-4" > 
+		  <div id="preview" class="card" style="width:350px">
+				<img class="card-img-top" src="images/06.jpg" alt="Card image" style="width:100%">
+				<div class="card-body">
+				  <h4 class="card-title">Players</h4>
+				  <p class="card-text">Players play important role in the winning game.</p>
+				  <a href="player.html" class="btn btn-primary stretched-link">more</a>
+				</div>
+		  </div>
+	  </div>
+  </div>
+  </div>
+   <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+  <div class= "card-block">
+	  <div class="col-lg-6 mb-4"> 
+		  <div id="preview" class="card" style="width:350px">
+				<img class="card-img-top" src="images/06.jpg" alt="Card image" style="width:100%">
+				<div class="card-body">
+				  <h4 class="card-title">Toss win</h4>
+				  <p class="card-text">Toss win by the team determined wheather team will win or lose</p>
+				  <a href="tosswin.html" class="btn btn-primary stretched-link">more</a>
+				</div>
+		  </div>
+	  </div>
+  </div>
+  </div>
+	</div>
+	</div>
+	</div>
+	<!---------------------------------------------------------Gallery--------------------------------------------------->
+	<div class="container" id="gallery">
+	<h2>Gallery</h2>
+ 
+	<img src="images/08.jpg" class="rounded-circle" width="250" height="200" > 
+	<img src="images/09.jpg" class="rounded-circle" width="250" height="200" > 
+	<img src="images/11.jpg" class="rounded-circle" width="250" height="200" > 
+	<img src="images/10.jpg" class="rounded-circle" width="250" height="200" > 
+	<img src="images/13.jpg" class="rounded-circle" width="250" height="200" > 
+	<img src="images/14.jpg" class="rounded-circle" width="250" height="200" > 
+	<img src="images/02.jpg" class="rounded-circle" width="250" height="200" > 
+	
+	
+	</div>
+	<br>
+	<!---------------------------------------------------------Contact--------------------------------------------------->
+	
+	<div  class="jumbotron jumbotron-fluid" id="contact"> 
+	<div class="container">
+	<section class="mb-4">
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+	<div class="row">
+	<div class="col-md-9 mb-md-0 mb-5">
+            <form id="contactForm" name="sentMessage" action="/contact" method="POST" novalidate>
+                   <div class="row">
+                
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" placeholder="Your name" class="form-control">
+                          
+                        </div>
+                    </div>                                       
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" placeholder="Your email" class="form-control">
+                           
+                        </div>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
+                           
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2"  placeholder="Your message" class="form-control md-textarea"></textarea>
+                           
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            <br>
+
+				<div class="text-center text-md-left">
+					<button class="btn btn-primary" type="submit" id="sendMessageButton">Send</button>
+				</div>
+			</form>
+        </div>
+        
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                    <p>+ 91 945 523 3170</p>
+                </li>
+
+                <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                    <p>aman.srivastava2639@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+
+</section>
+
+    <ul class="d-flex mb-3 inline" >
+	 
+	<h3>Follow us</h3>
+        <i><a class="fa fa-facebook" href="#"></a></i>
+        <i><a class="fa fa-tumblr" href="#"></a></i>
+        <i><a class="fa fa-google" href="#"></a></i>
+        <i><a class="fa fa-twitter" href="#"></a></i>
+        <i><a class="fa fa-pinterest" href="#"></a></i>
+        <i><a class="fa fa-instagram" href="#"></a></i>
+    </ul>
+	</div>
+	</div>
+	<!-----------------------------------------------------------Footer-------------------------------------------->
+	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> CricketPredictionSystem.com</a>
+	</div>
+	
+	</body>
+</html>
